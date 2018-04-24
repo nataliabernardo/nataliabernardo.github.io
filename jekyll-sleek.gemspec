@@ -3,11 +3,11 @@
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-sleek"
   spec.version       = "0.1.5"
-  spec.authors       = ["Jan Czizikow"]
-  spec.email         = ["jan.czizikow@gmail.com"]
+  spec.authors       = ["Natalia Bernardo"]
+  spec.email         = ["bernardo.natalia@outlook.com"]
 
   spec.summary       = %q{Sleek is a modern Jekyll theme focused on speed performance & SEO best practices.}
-  spec.homepage      = "https://janczizikow.github.io/sleek/"
+  spec.homepage      = "https://nataliabernardo.github.io/sleek/"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select do |f|
