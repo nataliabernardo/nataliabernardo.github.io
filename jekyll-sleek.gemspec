@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Natalia Bernardo"]
   spec.email         = ["bernardo.natalia@outlook.com"]
 
-  spec.summary       = %q{Sleek is a modern Jekyll theme focused on speed performance & SEO best practices.}
+  spec.summary       = %q{Welcome to my Blog!}
   spec.homepage      = "https://nataliabernardo.github.io/sleek/"
   spec.license       = "MIT"
 
