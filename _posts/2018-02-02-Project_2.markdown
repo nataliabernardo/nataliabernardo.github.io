@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Linear Regression for predicting the Success of a Recipe"
-featured-img: classroom
+featured-img: cheesecake
 ---
 
 ## Is it possible to predict the success of a recipe based on its ingredients?
