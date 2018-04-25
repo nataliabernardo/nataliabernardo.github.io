@@ -2,16 +2,16 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-sleek"
-  spec.version       = "0.1.5"
-  spec.authors       = ["Natalia Bernardo"]
-  spec.email         = ["bernardo.natalia@outlook.com"]
+  spec.version       = "0.1.3"
+  spec.authors       = ["Jan Czizikow"]
+  spec.email         = ["jan.czizikow@gmail.com"]
 
-  spec.summary       = %q{Welcome to my Blog!}
-  spec.homepage      = "https://nataliabernardo.github.io/sleek/"
+  spec.summary       = %q{Sleek is a modern Jekyll theme focused on speed performance & SEO best practices.}
+  spec.homepage      = "https://janczizikow.github.io/sleek/"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select do |f|
-    f.match(%r!^(assets|_(includes|layouts|sass)/|(LICENSE|README)((\.(txt|md|markdown)|$)))!i)
+    f.match(%r{^((assets|_layouts|_includes|_sass)/|(LICENSE|README)((\.(txt|md|markdown)|$)))}i)
   end
 
   spec.platform      = Gem::Platform::RUBY
