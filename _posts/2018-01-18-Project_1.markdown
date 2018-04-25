@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Analyzing NYC Subway and Demographic"
-featured-img: classroom
+featured-img: turnstile
 ---
 
 # Which MTA stations are optimal for street teams?
