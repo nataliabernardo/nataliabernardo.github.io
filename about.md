@@ -4,12 +4,24 @@ title: About
 permalink: /about/
 ---
 
-Test
+Hello! Welcome to my blog!
 
-Sleek is a modern Jekyll theme focused on speed performance & SEO best practices. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/) or simply read the guide on how to [get started](/getting-started)
+I am a Seattle-based data scientist at Metis.
 
-You can find the source code for the Jekyll new theme at:
-[sleek](https://github.com/janczizikow/sleek)
+Previously, I worked as a Data Analyst and Economic Consultant for 5 years, designing regulatory policies and tariff for public utilities through econometric techniques. The extensive quantitative analysis learned from this experience sparked my interest in experimenting with more tools to find patterns in data, and to identify the most appropriate method for solving a problem. 
 
-You can find the source code for Jekyll at
-[jekyll](https://github.com/jekyll/jekyll)
+In this blog you will find my projects. As you can see, my knowledge includes statistics, programming, economic modeling and machine learning for different industries. I'm highly motivated and always eager to keep learning.
+
+If you have questions and/or thoughts on anything you find here, feel free to contact me. I love meeting new people and sharing ideas, if you are in Seattle area, let's meet for a coffee.
+
+#### Education
+
+Data Science Certificate - Metis (2018)
+
+MS Economics - Barcelona Gradute School of Economics (2015)
+
+BS Electrical Engineering - Federal University of Rio de Janeiro (2012)
+
+#### Contact me
+
+[bernardo.natalia@outlook.com](mailto:bernardo.natalia@outlook.com)
