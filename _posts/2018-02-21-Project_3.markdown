@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Random Forest to predict Students' Performance"
+title:  "Random Forest to Predict Students' Performance"
 tags: data science supervised learning
 featured-img: classroom
 ---
