@@ -165,7 +165,7 @@ gulp.task('sw', function() {
 
 // Images
 gulp.task('img', function() {
-  return gulp.src('./_img/posts/*.{png,jpg}')
+  return gulp.src('_img/posts/*.{png,jpg}')
     .pipe($.responsive({
       // For all the images in the folder
       '*': [{
@@ -201,7 +201,7 @@ gulp.task('img', function() {
       withMetadata: false,
     }))
     .pipe(imagemin())
-    .pipe(gulp.dest('./assets/img/posts/'));
+    .pipe(gulp.dest('assets/img/posts/'));
 });
 
 
