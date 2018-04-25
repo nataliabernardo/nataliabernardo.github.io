@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "Random Forest to predict Students' Performance"
+tags: data science supervised learning
+featured-img: classroom
+---
+
+## Can we predict a student's performance based on their lifestyle?
+
+<IMG SRC="https://media.giphy.com/media/xT9DPFPfULYJHHrqN2/giphy.gif">
+
+As an Economist, I have seen many papers analyzing students' performance based on exclusively economic and social indicators, but it was the first example that I analyzed that included data regarding their lifestyle such as alcohol consumption and relationship status. The data was obtained through schools reports of approximately 700 high school students in Portugal, and can be found on the [UCI Repository](http://archive.ics.uci.edu/ml/datasets/Student+Performance). All this data holds valuable information, such as trends and patterns, which can be used to improve decision making and optimize success.
+
+The goal of this project is to create an easy to use tool for decision-makers to simulate if a student would pass or fail based on the student's characteristics and provide advanced help for them before the exam.
+
+As despicted in the figure below, 85% of students pass, it means, had grades equal or higher than 10. Here, we are interested in investigating the factors that may be leading the other 15% students to fail.
+
+[Figure of grades distribution]
+
+### Features
+
+For this project, since the objetive is to identify students that might fail the school, I'm focusing on increasing the recall for the class "fail".
+
+### Models
+
+### Demo
+
+### Conclusions & Next Steps
