@@ -2,7 +2,7 @@
 layout: post
 title:  "Natural Language Processing on Aesthetic Procedure Reviews"
 tags: data science pandas NLP
-featured-img: classroom
+featured-img: LDA
 ---
 
 # Predicting what user reviews are about with Topic Modeling and Sentiment Analysis
