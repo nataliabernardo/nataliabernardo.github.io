@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 ---
 
+<p align="center"> <img src="/assets/img/author.jpg" width="30%"></p>
+
 Hello! Welcome to my blog!
 
 I am a Seattle-based data scientist at Metis.
