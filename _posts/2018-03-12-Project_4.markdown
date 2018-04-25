@@ -1,0 +1,55 @@
+---
+layout: post
+title:  "Natural Language Processing on Aesthetic Procedure Reviews"
+tags: data science pandas NLP
+featured-img: classroom
+---
+
+# Predicting what user reviews are about with Topic Modeling and Sentiment Analysis
+
+A few years ago, I was searching for a skin treatment and found this website called [Realself](https://www.realself.com). It's the best source of information for those who are planning to do some aesthetic procedure, where thousands of users share their experience on treatments, like writing a diary. 
+
+After reading many reviews, I found four different treatments that offered similar outcomes based in the before and after pictures and chose the one that required less sessions to achieve the desired result. It was the most expensive and with longer downtime, however, provided faster results.
+
+There are two different types of reviews in Realself: (1) for doctors and (2) for procedures. Pacients review doctors for 9 different categories and procedures for 1 category ("worth it", "not worth it" or "not sure"), as you can see in the image below.
+
+
+ <p align="center"> <img src="/assets/article_images/project_4/Screen Shot 2018-04-17 at 10.12.41 PM.png" width="95%"></p>
+
+
+So I thought it would be interesting to uncover what customers talk more about in those long posts. For this task, I used a topic modelling method called [Latent Dirichlet Allocation (LDA)](https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation), a Natural Language Processing (NLP) tool that can automatically identify topics from a corpus. A “topic” consists of a group of words that frequently occur together. 
+
+Having the topics defined, I decided to predict how the users would rate their experience on those themes, in other words, I simulated the ratings for the potential subcategories of the procedures (such as for the doctors' reviews) based on user's sentiments. I used [Textblob](textblob.readthedocs.io/en/dev/) Sentiment for classifying each sentence of the posts as "negative" or "positive".
+
+<p align="center"> <img src="/assets/article_images/project_4/project4.png" width="50%"></p>
+
+### 1. Data Collection
+
+I extracted all posts (53,547 posts from 17,270 unique users) of all reviews from 3 different procedures: botox, rhinoplasty and coolsculpting. I used BeatifulSoup and Selenium for obtaining the data, and stored it in MongoDB.
+
+### 2. LDA to identify "hidden" topics in reviews
+
+I experiemented with different topic modelling techniques: LDA, non-negative matrix factorization (NMF) and k-means, and LDA's topics were easier to interpret. In this model, each topic from a corpus of text documents is defined as a multinomial distribution over a word dictionary with words drawn from a [Dirichlet distribution](https://en.wikipedia.org/wiki/Dirichlet_distribution). 
+
+However, it's not always an easy task. It requires human judgments to assign a category to the topic by looking at the words in it. After carefully examining the results, I visually identified the topics and, as expected, they were peculiar for each treatment:
+
+<p align="center"> <img src="/assets/article_images/project_4/topics0.png" width="95%"></p>
+
+I realized that despite having different themes, the reviews could be divided into 3 big topics: Procedure, Recovery and Results.
+
+<p align="center"> <img src="/assets/article_images/project_4/topics.png" width="100%"></p>
+
+The next step was to assign ratings for each one of those aggregated topics.
+
+
+### 3. Sentiment Analysis to assign ratings for topics
+
+One possible approach to define the rating for the topic is the percent positive comments in each treatment, similar to Rotten Tomatoes scores. For this task I tried Vader and TextBlob, and the later provided better results: "not worth it" reviews had more negative comments, while "worth it" reviews had more positive comments.
+
+<p align="center"> <img src="/assets/article_images/project_4/rating.png" width="100%"></p>
+
+### 4. Demo
+
+### Conclusions & Future work
+
+Probabilistic topic models have become popular tools for the unsupervised analysis of large document collections. These models posit a set of latent topics, multinomial distributions over words, and assume that each document can be described as a mixture of these topics. 
