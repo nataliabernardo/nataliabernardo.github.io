@@ -12,7 +12,7 @@ Previously, I worked as a Data Analyst and Economic Consultant for 5 years, desi
 
 In this blog you will find my projects. As you can see, my knowledge includes statistics, programming, economic modeling and machine learning for different industries. I'm highly motivated and always eager to keep learning.
 
-If you have questions and/or thoughts on anything you find here, feel free to contact me. I love meeting new people and sharing ideas, if you are in Seattle area, let's meet for a coffee.
+If you have questions and/or thoughts on anything you find here, feel free to contact me.
 
 #### Education
 
