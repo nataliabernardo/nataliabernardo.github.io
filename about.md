@@ -4,9 +4,9 @@ title: About
 permalink: /about/
 ---
 
-<p align="center"> <img src="/assets/img/author.jpg" width="30%"></p>
+<p align="center"> Hello! Welcome to my blog! </p>
 
-Hello! Welcome to my blog!
+<p align="center"> <img src="https://github.com/nataliabernardo/sleek/blob/master/assets/img/author.jpg" width="30%"></p>
 
 I am a Seattle-based data scientist at Metis.
 
