@@ -24,6 +24,7 @@ social:
 # Build settings
 markdown: kramdown
 highlighter: rouge # or pygments or null
+encoding: UTF-8
 #theme: jekyll-sleek
 exclude:
   - README.md
