@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Linear Regression for predicting the Success of a Recipe"
+title: "Linear Regression to Predict the Success of a Recipe"
 featured-img: cheesecake
 ---
 
