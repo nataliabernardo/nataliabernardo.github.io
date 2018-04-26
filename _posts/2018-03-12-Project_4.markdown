@@ -32,7 +32,7 @@ I experiemented with different topic modelling techniques: LDA, non-negative mat
 
 However, it's not always an easy task. It requires human judgments to assign a category to the topic by looking at the words in it. After carefully examining the results, I visually identified the topics and, as expected, they were peculiar for each treatment:
 
-<p align="center"> <img src="/assets/article_images/project_4/topics0.jpg" width="95%"></p>
+<p align="center"> <img src="/assets/article_images/project_4/topics0.jpg" width="65%"></p>
 
 I realized that despite having different themes, the reviews could be divided into 3 big topics: Procedure, Recovery and Results.
 
