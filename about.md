@@ -6,7 +6,7 @@ permalink: /about/
 
 Hello! Welcome to my blog!
 
-<img src="https://github.com/nataliabernardo/sleek/blob/master/assets/img/author.jpg" width="30%">
+<img src="/assets/img/author.jpg" width="30%">
 
 I am a Seattle-based data scientist at Metis.
 
