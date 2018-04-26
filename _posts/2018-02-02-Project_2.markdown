@@ -8,7 +8,7 @@ featured-img: cheesecake
 
 Is it possible to predict the success of a recipe based on its ingredients independently? The answer is no. Heston Blumenthal, the father of food pairing, needs at least 2 combined ingredients to make a special meal, however, it was possible to get good insights from the analysis.
 
-<p align="center"> <img src="/sleek/assets/article_images/project_2/foodpairing.jpg" width="80%"></p>
+<p align="center"> <img src="/assets/article_images/project_2/foodpairing.jpg" width="80%"></p>
 
 <p align="center"><font size="3">The backbone of the flavor network. Each node denotes an ingredient, the node color indicates food category, and node size reflects the ingredient prevalence in recipes. Source: Yong-Yeol Ahn, Sebastian Ahnert, James P. Bagrow, and A.-L. Barabási. “Flavor network and the principles of food pairing”(2011)</font> </p>
 
