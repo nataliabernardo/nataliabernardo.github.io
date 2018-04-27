@@ -20,7 +20,7 @@ So I thought it would be interesting to uncover what customers talk more about i
 
 Having the topics defined, I decided to predict how the users would rate their experience on those themes, in other words, I simulated the ratings for the potential subcategories of the procedures (such as for the doctors' reviews) based on user's sentiments. I used [Textblob](textblob.readthedocs.io/en/dev/) Sentiment for classifying each sentence of the posts as "negative" or "positive".
 
-<p align="center"> <img src="/assets/article_images/project_4/project4.png" width="100%"></p>
+<p align="center"> <img src="/assets/article_images/project_4/project4.png" width="48"></p>
 
 ### 1. Data Collection
 
