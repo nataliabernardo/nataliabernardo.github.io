@@ -6,7 +6,7 @@ permalink: /about/
 
 Hello! Welcome to my blog!
 
-<img src="/assets/img/author.png" width="30%">
+<img src="/assets/img/author.png" width="50%">
 
 I am a Seattle-based data scientist at Metis.
 
