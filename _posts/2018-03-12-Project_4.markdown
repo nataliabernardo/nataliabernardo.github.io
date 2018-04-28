@@ -22,7 +22,7 @@ Having the topics defined, I decided to predict how the users would rate their e
 
 <p align="center"> <img src="/assets/article_images/project_4/workflow.png" width="100%"></p>
 
-The results were presented in an interactive viz ([click here]("{ site.url}/assets/viz/index.html"), where you can explore the ratings, topics by procedure and sentiment over time.
+The results were presented in an interactive viz ([click here]("{ site.url}/assets/viz/index.html")), where you can explore the ratings, topics by procedure and sentiment over time.
 
 ### 1. Data collection and cleaning
 
@@ -60,7 +60,7 @@ One possible approach to define the rating for the topic is the percent positive
 
 ### 4. Demo
 
-<iframe src="{{ site.url }}/assets/viz/index.html" width="1020" height="750" frameBorder="0.5"></iframe>
+<iframe src="{{ site.url }}/assets/viz/index.html" width="1020" height="600" frameBorder="0.5"></iframe>
 
 ### Conclusions & Future work
 
