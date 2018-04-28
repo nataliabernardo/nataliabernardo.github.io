@@ -28,7 +28,7 @@ The results were presented in an interactive viz ([click here](https://nataliabe
 
 I extracted all posts (53,547 posts from 17,270 unique users) of all reviews from 3 different procedures: botox, rhinoplasty and coolsculpting. I used BeatifulSoup and Selenium for obtaining the data, and stored it in MongoDB.
 
-Four important steps for any natural language processing project:
+Four steps are important for any natural language processing project:
 
 1. tokenize - split up the document (post) into words
 2. lemmatize - get each word down to its root form (i.e. walking -> walk, better -> good)
@@ -37,9 +37,9 @@ Four important steps for any natural language processing project:
 
 I used the Python's libraries [NLTK](http://www.nltk.org) and sckit-learn's [CountVectorizer](http://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html), that takes each word in each document and counts the number of times the word appears.
 
-### 2. LDA to identify "hidden" topics in reviews
-
 Using CountVectorizer, I built a word matrix choosing a max_df of 80% and min_df of 10, meaning that the matrix would exclude words that appeared in more than 80% of the texts (to avoid commonly used terms) and less than 10 times. I also chose an ngram range of (1, 3) -  pairs or triplets of words that show up together - to be able to capture terms of two or three words  commonly used together.
+
+### 2. LDA to identify "hidden" topics in reviews
 
 I experiemented with different topic modelling techniques: LDA, non-negative matrix factorization (NMF) and k-means, and LDA's topics were easier to interpret. In this model, each topic from a corpus of text documents is defined as a multinomial distribution over a word dictionary with words drawn from a [Dirichlet distribution](https://en.wikipedia.org/wiki/Dirichlet_distribution). 
 
