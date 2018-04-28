@@ -30,10 +30,10 @@ I extracted all posts (53,547 posts from 17,270 unique users) of all reviews fro
 
 Four important steps for any natural language processing project:
 
-1.tokenize - split up the document (post) into words
-2.lemmatize - get each word down to its root form (i.e. walking -> walk, better -> good)
-3.remove stop words - the most common words in a language (i.e. the, is, at, which)
-4.vectorize - transforming text into a vector of numbers
+1. tokenize - split up the document (post) into words
+2. lemmatize - get each word down to its root form (i.e. walking -> walk, better -> good)
+3. remove stop words - the most common words in a language (i.e. the, is, at, which)
+4. vectorize - transforming text into a vector of numbers
 
 I used the Python's libraries [NLTK](http://www.nltk.org) and sckitlearn [CountVectorizer](http://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html), that takes each word in each document and counts the number of times the word appears.
 
