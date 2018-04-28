@@ -22,7 +22,7 @@ Having the topics defined, I decided to predict how the users would rate their e
 
 <p align="center"> <img src="/assets/article_images/project_4/project4.png" width="100%"></p>
 
-The results were presented in an interactive viz ([click here]("{{ site.url }}/assets/viz/index.html")), where you can explore the ratings, topics by procedure and sentiment over time.
+The results were presented in an interactive viz ([click here]({{ site.url }}/assets/viz/index.html)), where you can explore the ratings, topics by procedure and sentiment over time.
 
 ### 1. Data Collection
 
