@@ -45,11 +45,11 @@ I experiemented with different topic modelling techniques: LDA, non-negative mat
 
 However, it's not always an easy task. It requires human judgments to assign a category to the topic by looking at the words in it, so it has some subjectivity. Some example of topics identification for the Rhynoplasty:
 
-* Surgery/pos op: day, feel, pain, take, sleep, surgery, night, really, wake, good, eye, bad, hour, today, help, much, time, make, start, also, bruise, come, lot, eat, mouth, well, around, keep, home, thing, nurse, think, back, bit, breathe, blood, swell, last, recovery, morning, first, say, use, put, dry, try, pretty, could, cast, able
+* *Surgery/pos op: day, feel, pain, take, sleep, surgery, night, really, wake, good, eye, bad, hour, today, help, much, time, make, start, also, bruise, come, lot, eat, mouth, well, around, keep, home, thing, nurse, think, back, bit, breathe, blood, swell, last, recovery, morning, first, say, use, put, dry, try, pretty, could, cast, able
 
-* Doctor/staff: dr, surgery, result, look, good, feel, make, happy, want, surgeon, staff, recommend, great, doctor, year, amazing, natural, experience, always, time, comfortable, know, could, plastic, love, work, make feel, care, decision, extremely, even, consultation, take, recovery, well, highly, one, thank, exactly, process, feel comfortable, confident, patient, choose, see, first, question, happy result, meet, decide
+* *Doctor/staff: dr, surgery, result, look, good, feel, make, happy, want, surgeon, staff, recommend, great, doctor, year, amazing, natural, experience, always, time, comfortable, know, could, plastic, love, work, make feel, care, decision, extremely, even, consultation, take, recovery, well, highly, one, thank, exactly, process, feel comfortable, confident, patient, choose, see, first, question, happy result, meet, decide
 
-* Discomfort (and first impressions) during the recovery: look, swell, day, feel, cast, see, week, good, really, tip, much, swollen, swelling, take, happy, today, think, bit, say, come, love, back, time, even, remove, new, stitch, normal, know, wait, lot, pic, nostril, notice, tape, result, side, one, since, right, pretty, also, eye, well, smile, change, skin, splint, removal, bruise
+* *Discomfort (and first impressions) during the recovery: look, swell, day, feel, cast, see, week, good, really, tip, much, swollen, swelling, take, happy, today, think, bit, say, come, love, back, time, even, remove, new, stitch, normal, know, wait, lot, pic, nostril, notice, tape, result, side, one, since, right, pretty, also, eye, well, smile, change, skin, splint, removal, bruise
 
 After carefully examining the results, I visually labeled the topics and, as expected, they were peculiar for each treatment:
 
