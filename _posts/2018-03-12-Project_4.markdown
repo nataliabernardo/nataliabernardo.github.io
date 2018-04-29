@@ -49,7 +49,7 @@ However, it's not always an easy task. It requires human judgments to assign a c
 
 * *Doctor/staff: dr, surgery, result, look, good, feel, make, happy, want, surgeon, staff, recommend, great, doctor, year, amazing, natural, experience, always, time, comfortable, know, could, plastic, love, work, make feel, care, decision, extremely, even, consultation, take, recovery, well, highly, one, thank, exactly, process, feel comfortable, confident, patient, choose, see, first, question, happy result, meet, decide*
 
-* *Discomfort (and first impressions) during the recovery: look, swell, day, feel, cast, see, week, good, really, tip, much, swollen, swelling, take, happy, today, think, bit, say, come, love, back, time, even, remove, new, stitch, normal, know, wait, lot, pic, nostril, notice, tape, result, side, one, since, right, pretty, also, eye, well, smile, change, skin, splint, removal, bruise*
+* *Discomfort (and first impressions): look, swell, day, feel, cast, see, week, good, really, tip, much, swollen, swelling, take, happy, today, think, bit, say, come, love, back, time, even, remove, new, stitch, normal, know, wait, lot, pic, nostril, notice, tape, result, side, one, since, right, pretty, also, eye, well, smile, change, skin, splint, removal, bruise*
 
 After carefully examining the results, I visually labeled the topics and, as expected, they were peculiar for each treatment:
 
