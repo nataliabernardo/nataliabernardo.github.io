@@ -60,6 +60,8 @@ One possible approach to define the rating for the topic is the percent positive
 
 <p align="center"> <img src="/assets/article_images/project_4/rating.jpg" width="100%"></p>
 
+As expected, the more drastic results and more invasive, the more negative sentiment posts a procedure receives, because patients tend to expose concerns with the results. For example, although ryhoplasty presents a high "worth it" rate (90%), many patients face anxiety during the recovery period, since they can not see the final results immediately and have to wait some time until the swollen is gone. Minimally or no invasive treatments like coolsculpting and botox tend to receive more positive reviews. Curiously, the majority of negative reviews to coolsculpting are related to the minimal results.
+
 ### 4. Demo
 
 <iframe src="{{ site.url }}/assets/viz/index.html" width="900" height="600" frameBorder="0.5"></iframe>
