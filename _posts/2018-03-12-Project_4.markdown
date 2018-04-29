@@ -56,11 +56,11 @@ The next step was to assign ratings for each one of those aggregated topics.
 
 ### 3. Sentiment Analysis to assign ratings for topics
 
-One possible approach to define the rating for the topic is the percent positive comments in each treatment, similar to Rotten Tomatoes scores. For this task I tried Vader and TextBlob, and the later provided better results: "not worth it" reviews had more negative comments, while "worth it" reviews had more positive comments.
+One possible approach to define the rating for the topic is to compute the percent positive comments in each treatment, similar to the Rotten Tomatoes scores. For this task I tried both Vader and TextBlob, and the later provided better results: the "not worth it" reviews had more negative comments, while the "worth it" reviews had more positive comments.
 
 <p align="center"> <img src="/assets/article_images/project_4/rating.jpg" width="100%"></p>
 
-As expected, the more drastic results and more invasive, the more negative sentiment posts a procedure receives, because patients tend to expose concerns with the results. For example, although ryhoplasty presents a high "worth it" rate (90%), many patients face anxiety during the recovery period, since they can not see the final results immediately and have to wait some time until the swollen is gone. Minimally or non-invasive treatments like coolsculpting and botox tend to receive more positive reviews. Curiously, the majority of negative reviews to coolsculpting are related to the minimal results.
+As expected, the more invasive procedures that render more drastic results, the more negative sentiment its posts receive. It's because patients are more expositive on concerns with the aesthetic results. For example, although ryhoplasty is given a high "worth it" rate (90%), many patients face anxiety during the recovery period, since they cannot see the final results immediately and have to wait some time until the swollen is gone. On the other hand, minimally or non-invasive treatments like coolsculpting and botox tend to receive more positive reviews. Curiously, the majority of negative reviews to coolsculpting are related to the minimal results of the procedure.
 
 ### 4. Demo
 
@@ -68,4 +68,16 @@ As expected, the more drastic results and more invasive, the more negative senti
 
 ### Conclusions & Future work
 
-Probabilistic topic models have become popular tools for the unsupervised analysis of large document collections. These models posit a set of latent topics, multinomial distributions over words, and assume that each document can be described as a mixture of these topics. 
+Probabilistic topic models have become popular tools for the unsupervised analysis of large document collections. These models posit a set of latent topics, multinomial distributions over words, and assume that each document can be described as a mixture of these topics.
+
+•Some people prefer short recovery time while other prefer drastic results
+•Negative reviews on less-invasive procedure are usually for the minimal result.
+
+•Classification model (SVM) for assigning topics to new reviews.
+
+•Comparison tool: •Comparison between similar treatments (e.g. liposuction vs. Coolsculpting)
+•Extract Reviews’ Highlights
+•Based on:
+•Term frequency
+•Social engagement (likes, comments, etc)
+•Sentiment
