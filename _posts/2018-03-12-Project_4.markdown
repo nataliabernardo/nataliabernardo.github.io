@@ -16,7 +16,7 @@ There are two different types of reviews in Realself: (1) for doctors and (2) fo
  <p align="center"> <img src="/assets/article_images/project_4/reviews.jpg" width="95%"></p>
 
 
-So I thought it would be interesting to uncover what customers talk more about in those long posts. For this task, I used a topic modelling method called [Latent Dirichlet Allocation (LDA)](https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation), a Natural Language Processing (NLP) tool that can automatically identify topics from a corpus. A “topic” consists of a group of words that frequently occur together. 
+So I thought it would be interesting to uncover what customers talk more about in those long posts. For this task, I used a topic modelling method called [Latent Dirichlet Allocation (LDA)](https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation), a Natural Language Processing (NLP) tool that can automatically identify topics from a corpus. A “topic” consists of a group of words with some semantic relation that frequently occur together.
 
 Having the topics defined, I decided to predict how the users would rate their experience on those themes, in other words, I simulated the ratings for the potential subcategories of the procedures (such as for the doctors' reviews) based on user's sentiments. I used [Textblob](textblob.readthedocs.io/en/dev/) Sentiment for classifying each sentence of the posts as "negative" or "positive".
 
@@ -43,7 +43,7 @@ Using CountVectorizer, I built a word matrix choosing a max_df of 80% and min_df
 
 I experiemented with different topic modelling techniques: LDA, non-negative matrix factorization (NMF) and k-means, and LDA's topics were easier to interpret. In this model, each topic from a corpus of text documents is defined as a multinomial distribution over a word dictionary with words drawn from a [Dirichlet distribution](https://en.wikipedia.org/wiki/Dirichlet_distribution). 
 
-However, it's not always an easy task. It requires human judgments to assign a category to the topic by looking at the words in it, so it has some subjectivity. Some example of topics identification for the Rhynoplasty:
+However, it's not always an easy task. It requires human judgments to assign a category to the topic by looking at the words in it, so it has some subjectivity. Some example of topics identification for Rhynoplasty:
 
 * *Surgery/pos op: day, feel, pain, take, sleep, surgery, night, really, wake, good, eye, bad, hour, today, help, much, time, make, start, also, bruise, come, lot, eat, mouth, well, around, keep, home, thing, nurse, think, back, bit, breathe, blood, swell, last, recovery, morning, first, say, use, put, dry, try, pretty, could, cast, able*
 
@@ -76,7 +76,9 @@ As expected, the more invasive procedures that render more drastic results, the 
 
 ### Conclusions & Future work
 
-Probabilistic topic models have become popular tools for the unsupervised analysis of large document collections. These models posit a set of latent topics, multinomial distributions over words, and assume that each document can be described as a mixture of these topics.
+It is challeging to extract relevant features from large number of opinions posted on review platforms and at the same time offer this information in a useful way to each user. Probabilistic topic models are becoming popular tools to uncover what other users think about a product. On the user side, it enables to personalize the content in order to shorten the time an user needs to make a decision. On the service provider's side, it can give insights of what users most care about. 
+
+In the aesthetics 
 
 •Some people prefer short recovery time while other prefer drastic results
 •Negative reviews on less-invasive procedure are usually for the minimal result.
