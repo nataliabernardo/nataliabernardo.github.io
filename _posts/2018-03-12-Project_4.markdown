@@ -24,7 +24,7 @@ Having the topics defined, I decided to **predict how the users would rate their
 
 The results were presented in an interactive viz ([click here](https://nataliabernardo.github.io/assets/viz/index.html)), where you can explore the ratings, topics by procedure and sentiment over time.
 
-### 1. Data collection and cleaning
+## 1. Data collection and cleaning
 
 I extracted all posts (53,547 posts from 17,270 unique users) of all reviews from 3 different procedures: botox, rhinoplasty and coolsculpting. I used BeatifulSoup and Selenium for obtaining the data, and stored it in MongoDB.
 
@@ -39,7 +39,7 @@ I used the Python's libraries [NLTK](http://www.nltk.org) and sckit-learn's [Cou
 
 Using CountVectorizer, I built a word matrix choosing a max_df of 80% and min_df of 10, meaning that the matrix would exclude words that appeared in more than 80% of the texts (to avoid commonly used terms) and less than 10 times. I also chose an ngram range of (1, 3) -  pairs or triplets of words that show up together - to be able to capture terms of two or three words  commonly used together.
 
-### 2. LDA to identify "hidden" topics in reviews
+## 2. LDA to identify "hidden" topics in reviews
 
 I experiemented with different topic modelling techniques: LDA, non-negative matrix factorization (NMF) and k-means, and LDA's topics were easier to interpret. In this model, each topic from a corpus of text documents is defined as a multinomial distribution over a word dictionary with words drawn from a [Dirichlet distribution](https://en.wikipedia.org/wiki/Dirichlet_distribution). 
 
@@ -62,7 +62,7 @@ I realized that despite having different themes, **the reviews could be divided 
 The next step was to assign ratings for each one of those aggregated topics.
 
 
-### 3. Sentiment Analysis to assign ratings for topics
+## 3. Sentiment Analysis to assign ratings for topics
 
 One possible approach to define the rating for the topic is to compute the **percent of positive comments in each treatment**, similar to the Rotten Tomatoes scores. For this task I tried both Vader and TextBlob, and the later provided better results: the "not worth it" reviews had more negative comments, while the "worth it" reviews had more positive comments.
 
@@ -70,11 +70,11 @@ One possible approach to define the rating for the topic is to compute the **per
 
 As expected, **the more invasive procedures that render more drastic results, the more negative sentiment its posts receive**. It's because patients are more expositive on concerns with the aesthetic results. For example, although ryhoplasty is given a high "worth it" rate (90%), many patients face anxiety during the recovery period, since they cannot see the final results immediately and have to wait some time until the swollen is gone. On the other hand, minimally or non-invasive treatments like coolsculpting and botox tend to receive more positive sentiment reviews (curiously, the majority of negative sentiment reviews to coolsculpting are related to the minimal results of the procedure).
 
-### Demo
+## Demo
 
 <iframe src="{{ site.url }}/assets/viz/index.html" width="900" height="600" frameBorder="0.5"></iframe>
 
-### Conclusions & Future work
+## Conclusions & Future work
 
 Online reviews are a big factor in a company's reputation, however **it's challenging to oversee all the opinions posted on review platforms**. For minimizing the workload, I experimented applying machine learning and text mining methods to identify relevant themes present in those opinions, using semantic topic modeling.
 
@@ -82,25 +82,19 @@ In fact, probabilistic topic models are becoming popular tools to uncover what o
 
 As next steps, I would like to expand the project developing:
 
-#### Improve Topic Modeling
+### Improve Topic Modeling
 
 I had only 2 weeks to complete this project, so the model still has room for improvement. With more time, I would like to test more scenarios and tweak the parameters in order to increase the accuracy of the model. And also, extend the analysis for more procedures.
 
-#### Classification model (SVM) for assigning topics to new reviews.
+### Classification model (SVM) for assigning topics to new reviews.
 
 When a new document (review) is added to the corpus, we don't need to redo all the work. Once we build a [suport vector machine (SVM)](https://en.wikipedia.org/wiki/Support_vector_machine) classifier, it's possible to quickly predict the topic of this new review.
 
-#### Comparison tool
+### Comparison tool
 
 There's a trade-off between downtime and results: while some people prefer shorter recovery time, others prefer drastic results. So if patients had a tool to compare between treatments with similar goals (e.g. liposuction vs. Coolsculpting) based on their priorities, they could spend less time in their research and choose the most appropriate procedure for their expectations, and avoid frustating experiences like:
 <p align="center"> <img src="/assets/article_images/project_4/coolsculpting_review1.png" width="100%"></p>
 
-#### Extract Reviews’ Highlights
+### Extract Reviews’ Highlights
 
-•
-Based on:
-•Term frequency
-•Social engagement (likes, comments, etc)
-•Sentiment
-
-
+Additionally, It's possible to improve the user's search experience by adding highlights from reviews. To choose the most relevant sentences, we could make use of the social engagement tools that Realself provides, such as comments and likes, as well as sentiment and term frequency.
