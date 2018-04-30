@@ -80,6 +80,11 @@ Online reviews are a big factor in a company's reputation, however it's challegi
 
 In fact, probabilistic topic models are becoming popular tools to uncover what other users think about a product. On the service provider's side, it can give good insights of what users most care about when purchasing a product or a service. On the user side, it allows the provider to personalize the content of the reviews platform in order to shorten the time an user needs to make a decision, for example, creating rating for specific categories. 
 
+As next steps, I would like to expand the project:
+
+* Comparison tool
+
+There's a trade-off between downtime and results, while some people prefer short recovery, others prefer drastic results. So if they could compare between treatments with similar goal (e.g. liposuction vs. Coolsculpting)
 
 
 •Some people prefer short recovery time while other prefer drastic results
@@ -87,7 +92,6 @@ In fact, probabilistic topic models are becoming popular tools to uncover what o
 
 •Classification model (SVM) for assigning topics to new reviews.
 
-•Comparison tool: •Comparison between similar treatments (e.g. liposuction vs. Coolsculpting)
 •Extract Reviews’ Highlights
 •Based on:
 •Term frequency
