@@ -82,19 +82,19 @@ In fact, probabilistic topic models are becoming popular tools to uncover what o
 
 As next steps, I would like to expand the project:
 
-##### Comparison tool
+#### Comparison tool
 
 There's a trade-off between downtime and results, while some people prefer shorter recovery time, others prefer drastic results. So if patient's could compare between treatments with similar goals (e.g. liposuction vs. Coolsculpting) based on their priorities, they could ...  and avoid experiences like:
 
 <p align="center"> <img src="/assets/article_images/project_4/coolsculpting_review1.png" width="100%"></p>
 
 
-##### Classification model (SVM) for assigning topics to new reviews.
+#### Classification model (SVM) for assigning topics to new reviews.
 
-##### Extract Reviews’ Highlights
+#### Extract Reviews’ Highlights
 •Based on:
 •Term frequency
 •Social engagement (likes, comments, etc)
 •Sentiment
 
-##### Improve Topic Modeling
+#### Improve Topic Modeling
