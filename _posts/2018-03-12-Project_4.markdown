@@ -76,12 +76,11 @@ As expected, the more invasive procedures that render more drastic results, the 
 
 ### Conclusions & Future work
 
-Online reviews are a big factor in a company's reputation, however it's challeging to oversee all the opinions posted on review platforms. For this reason, I experimented applying machine learning and text mining methods identify relevant themes present in those opinions. Probabilistic topic models are becoming popular tools to uncover what other users think about a product. On the service provider's side, it can give good insights of what users most care about a product or a service. On the user side, it allows the provider to personalize the content of the reviews platform in order to shorten the time an user needs to make a decision, for example, creatings 
+Online reviews are a big factor in a company's reputation, however it's challeging to oversee all the opinions posted on review platforms. For minimizing the workload, I experimented applying machine learning and text mining methods identify relevant themes present in those opinions, using semantic topic modeling. 
+
+In fact, probabilistic topic models are becoming popular tools to uncover what other users think about a product. On the service provider's side, it can give good insights of what users most care about when purchasing a product or a service. On the user side, it allows the provider to personalize the content of the reviews platform in order to shorten the time an user needs to make a decision, for example, creating rating for specific categories. 
 
 
-
-
-In the aesthetics 
 
 •Some people prefer short recovery time while other prefer drastic results
 •Negative reviews on less-invasive procedure are usually for the minimal result.
