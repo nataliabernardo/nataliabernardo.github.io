@@ -72,6 +72,8 @@ As expected, **the more invasive procedures that render more drastic results, th
 
 ## Demo
 
+([Click here](https://nataliabernardo.github.io/assets/viz/index.html)) to view it in full screen.
+
 <iframe src="{{ site.url }}/assets/viz/index.html" width="900" height="600" frameBorder="0.5"></iframe>
 
 ## Conclusions & Future work
