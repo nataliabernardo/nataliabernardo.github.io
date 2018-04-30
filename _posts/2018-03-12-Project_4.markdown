@@ -78,13 +78,13 @@ As expected, **the more invasive procedures that render more drastic results, th
 
 Online reviews are a big factor in a company's reputation, however **it's challenging to oversee all the opinions posted on review platforms**. For minimizing the workload, I experimented applying machine learning and text mining methods to identify relevant themes present in those opinions, using semantic topic modeling.
 
-In fact, probabilistic topic models are becoming popular tools to uncover what other users think about a product. On the service provider's side, it can give good **insights of what users most care about when purchasing a product or a service**. On the user's side, it allows the provider to personalize the content of the reviews platform in order to **shorten the time an user needs to make a decision**, for example, creating rating for specific categories. 
+In fact, probabilistic topic models are becoming popular tools to uncover what other users think about a product. On the service provider's side, it can give good **insights of what users most care about when purchasing** a product or a service. On the user's side, it allows the provider to personalize the content of the reviews platform in order to **shorten the time an user needs to make a decision**, for example, creating rating for specific categories. 
 
 As next steps, I would like to expand the project developing:
 
 ### Improve Topic Modeling
 
-I had only 2 weeks to complete this project, so the model still has room for improvement. With more time, I would like to test more scenarios and tweak the parameters in order to increase the accuracy of the model. And also, extend the analysis for more procedures.
+I had only 2 weeks to complete this project, so it still has room for improvement. With more time, I would like to test more scenarios and tweak the parameters in order to increase the accuracy of the model. And also, extend the analysis for more procedures.
 
 ### Classification model (SVM) for assigning topics to new reviews.
 
@@ -92,7 +92,7 @@ When a new document (review) is added to the corpus, we don't need to redo all t
 
 ### Comparison tool
 
-There's a trade-off between downtime and results: while some people prefer shorter recovery time, others prefer drastic results. So if patients had a tool to compare between treatments with similar goals (e.g. liposuction vs. Coolsculpting) based on their priorities, they could spend less time in their research and choose the most appropriate procedure for their expectations, and avoid frustating experiences like:
+There's a trade-off between downtime and results: **while some people prefer shorter recovery time, others prefer drastic results**. So if patients had a tool to compare between treatments with similar goals (e.g. liposuction vs. Coolsculpting) based on their priorities, they could spend less time in their research and choose the most appropriate procedure for their expectations, and avoid frustating experiences like:
 <p align="center"> <img src="/assets/article_images/project_4/coolsculpting_review1.png" width="100%"></p>
 
 ### Extract Reviews’ Highlights
