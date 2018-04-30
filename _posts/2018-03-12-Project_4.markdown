@@ -18,7 +18,7 @@ There are two different types of reviews in Realself: (1) for doctors and (2) fo
 
 So I thought it would be interesting to **uncover what customers talk more about in those long posts**. For this task, I used a topic modelling method called [Latent Dirichlet Allocation (LDA)](https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation), a Natural Language Processing (NLP) tool that can automatically identify topics from a corpus. A “topic” consists of a group of words with some semantic relation that frequently occur together.
 
-Having the topics defined, I decided to **predict how the users would rate their experience on those themes**, in other words, I simulated the ratings for the potential subcategories of the procedures (such as for the doctors' reviews) based on user's sentiments. I used [Textblob](textblob.readthedocs.io/en/dev/) Sentiment for classifying each sentence of the posts as "negative" or "positive".
+Having the topics defined, I decided to **predict how the users would rate their experience on those themes**, in other words, I simulated the ratings for the potential subcategories of the procedures (such as for the doctors' reviews) based on user's sentiments. I used [Textblob](https://textblob.readthedocs.io/en/dev/) Sentiment for classifying each sentence of the posts as "negative" or "positive".
 
 <p align="center"> <img src="/assets/article_images/project_4/workflow.png" width="100%"></p>
 
@@ -41,7 +41,7 @@ Using CountVectorizer, I built a word matrix choosing a max_df of 80% and min_df
 
 ## 2. LDA to identify "hidden" topics in reviews
 
-I experiemented with different topic modelling techniques: LDA, non-negative matrix factorization (NMF) and k-means, and LDA's topics were easier to interpret. In this model, each topic from a corpus of text documents is defined as a multinomial distribution over a word dictionary with words drawn from a [Dirichlet distribution](https://en.wikipedia.org/wiki/Dirichlet_distribution). 
+I experiemented with different topic modelling techniques: LDA, non-negative matrix factorization (NMF) and k-means, and LDA's topics were easier to interpret. In this model, each topic from a corpus of text documents is defined as a multinomial distribution over a word dictionary with words drawn from a [dirichlet distribution](https://en.wikipedia.org/wiki/Dirichlet_distribution). 
 
 However, it's not always an easy task. **It requires human judgments to assign a category to the topic by looking at the words in it**, so it has some subjectivity. Some example of topics identification for Rhynoplasty:
 
