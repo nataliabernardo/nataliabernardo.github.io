@@ -6,9 +6,9 @@ featured-img: LDA
 
 # Predicting what user reviews are about with Topic Modeling and Sentiment Analysis
 
-A few years ago, I was searching for a skin treatment and found this website called [Realself](https://www.realself.com). It's the best source of information for those who are planning to do some aesthetic procedure, where thousands of users share their experience on treatments, like writing a diary. 
+A few years ago, I was searching for a skin treatment and found this website called [Realself](https://www.realself.com). It's the best source of information for those who are planning to do some aesthetic procedure, where **thousands of users share their experience on treatments, like writing a diary**. 
 
-After reading many reviews, I found four different treatments that offered similar outcomes based in the before and after pictures and chose the one that required less sessions to achieve the desired result. It was the most expensive and with longer downtime, however, provided faster results.
+After reading many reviews, I found four different treatments that offered similar outcomes based in the before and after pictures and chose the one that required less sessions to achieve the desired result. It was the most expensive one and with longer downtime, however, provided faster results.
 
 There are two different types of reviews in Realself: (1) for doctors and (2) for procedures. Pacients review doctors for 9 different categories and procedures for 1 category ("worth it", "not worth it" or "not sure"), as you can see in the image below.
 
@@ -16,9 +16,9 @@ There are two different types of reviews in Realself: (1) for doctors and (2) fo
  <p align="center"> <img src="/assets/article_images/project_4/reviews.jpg" width="95%"></p>
 
 
-So I thought it would be interesting to uncover what customers talk more about in those long posts. For this task, I used a topic modelling method called [Latent Dirichlet Allocation (LDA)](https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation), a Natural Language Processing (NLP) tool that can automatically identify topics from a corpus. A “topic” consists of a group of words with some semantic relation that frequently occur together.
+So I thought it would be interesting to **uncover what customers talk more about in those long posts**. For this task, I used a topic modelling method called [Latent Dirichlet Allocation (LDA)](https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation), a Natural Language Processing (NLP) tool that can automatically identify topics from a corpus. A “topic” consists of a group of words with some semantic relation that frequently occur together.
 
-Having the topics defined, I decided to predict how the users would rate their experience on those themes, in other words, I simulated the ratings for the potential subcategories of the procedures (such as for the doctors' reviews) based on user's sentiments. I used [Textblob](textblob.readthedocs.io/en/dev/) Sentiment for classifying each sentence of the posts as "negative" or "positive".
+Having the topics defined, I decided to **predict how the users would rate their experience on those themes**, in other words, I simulated the ratings for the potential subcategories of the procedures (such as for the doctors' reviews) based on user's sentiments. I used [Textblob](textblob.readthedocs.io/en/dev/) Sentiment for classifying each sentence of the posts as "negative" or "positive".
 
 <p align="center"> <img src="/assets/article_images/project_4/workflow.png" width="100%"></p>
 
@@ -43,7 +43,7 @@ Using CountVectorizer, I built a word matrix choosing a max_df of 80% and min_df
 
 I experiemented with different topic modelling techniques: LDA, non-negative matrix factorization (NMF) and k-means, and LDA's topics were easier to interpret. In this model, each topic from a corpus of text documents is defined as a multinomial distribution over a word dictionary with words drawn from a [Dirichlet distribution](https://en.wikipedia.org/wiki/Dirichlet_distribution). 
 
-However, it's not always an easy task. It requires human judgments to assign a category to the topic by looking at the words in it, so it has some subjectivity. Some example of topics identification for Rhynoplasty:
+However, it's not always an easy task. **It requires human judgments to assign a category to the topic by looking at the words in it**, so it has some subjectivity. Some example of topics identification for Rhynoplasty:
 
 * *Surgery/pos op: day, feel, pain, take, sleep, surgery, night, really, wake, good, eye, bad, hour, today, help, much, time, make, start, also, bruise, come, lot, eat, mouth, well, around, keep, home, thing, nurse, think, back, bit, breathe, blood, swell, last, recovery, morning, first, say, use, put, dry, try, pretty, could, cast, able*
 
@@ -64,7 +64,7 @@ The next step was to assign ratings for each one of those aggregated topics.
 
 ### 3. Sentiment Analysis to assign ratings for topics
 
-One possible approach to define the rating for the topic is to compute the percent positive comments in each treatment, similar to the Rotten Tomatoes scores. For this task I tried both Vader and TextBlob, and the later provided better results: the "not worth it" reviews had more negative comments, while the "worth it" reviews had more positive comments.
+One possible approach to define the rating for the topic is to compute the **percent of positive comments in each treatment**, similar to the Rotten Tomatoes scores. For this task I tried both Vader and TextBlob, and the later provided better results: the "not worth it" reviews had more negative comments, while the "worth it" reviews had more positive comments.
 
 <p align="center"> <img src="/assets/article_images/project_4/rating.jpg" width="100%"></p>
 
@@ -78,25 +78,27 @@ As expected, the more invasive procedures that render more drastic results, the 
 
 Online reviews are a big factor in a company's reputation, however it's challenging to oversee all the opinions posted on review platforms. For minimizing the workload, I experimented applying machine learning and text mining methods to identify relevant themes present in those opinions, using semantic topic modeling.
 
-In fact, probabilistic topic models are becoming popular tools to uncover what other users think about a product. On the service provider's side, it can give good insights of what users most care about when purchasing a product or a service. On the user's side, it allows the provider to personalize the content of the reviews platform in order to shorten the time an user needs to make a decision, for example, creating rating for specific categories. 
+In fact, probabilistic topic models are becoming popular tools to uncover what other users think about a product. On the service provider's side, it can give good **insights of what users most care about when purchasing a product or a service**. On the user's side, it allows the provider to personalize the content of the reviews platform in order to **shorten the time an user needs to make a decision**, for example, creating rating for specific categories. 
 
 As next steps, I would like to expand the project developing:
 
 #### Improve Topic Modeling
 
-I had only 2 weeks to do this task, so the model still have room for improvement
+I had only 2 weeks to complete this project, so the model still has room for improvement. With more time, I would like to test more scenarios and tweak the parameters in order to increase the accuracy of the model. And also, extend the analysis for more procedures.
+
+#### Classification model (SVM) for assigning topics to new reviews.
+
+When a new document (review) is added to the corpus, we don't need to redo all the work. Once we build a [suport vector machine (SVM)](https://en.wikipedia.org/wiki/Support_vector_machine) classifier, it's possible to quickly predict the topic of this new review.
 
 #### Comparison tool
 
 There's a trade-off between downtime and results: while some people prefer shorter recovery time, others prefer drastic results. So if patients had a tool to compare between treatments with similar goals (e.g. liposuction vs. Coolsculpting) based on their priorities, they could spend less time in their research and choose the most appropriate procedure for their expectations, and avoid frustating experiences like:
 <p align="center"> <img src="/assets/article_images/project_4/coolsculpting_review1.png" width="100%"></p>
 
-#### Classification model (SVM) for assigning topics to new reviews.
-
-When a new document (review) is added to the corpus, we don't need to redo all the work. Once we build a SVM classifier, it's possible to predict the topic of this review.
-
 #### Extract Reviews’ Highlights
-•Based on:
+
+•
+Based on:
 •Term frequency
 •Social engagement (likes, comments, etc)
 •Sentiment
