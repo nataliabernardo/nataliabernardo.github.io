@@ -55,7 +55,7 @@ After carefully examining the results, I visually labeled the topics and, as exp
 
 <p align="center"> <img src="/assets/article_images/project_4/all_topics.png" width="100%"></p>
 
-I realized that despite having different themes, the reviews could be divided into 3 big topics: Procedure, Recovery and Results.
+I realized that despite having different themes, **the reviews could be divided into 3 big topics**: Procedure, Recovery and Results.
 
 <p align="center"> <img src="/assets/article_images/project_4/topics.jpg" width="100%"></p>
 
@@ -68,7 +68,7 @@ One possible approach to define the rating for the topic is to compute the **per
 
 <p align="center"> <img src="/assets/article_images/project_4/rating.jpg" width="100%"></p>
 
-As expected, the more invasive procedures that render more drastic results, the more negative sentiment its posts receive. It's because patients are more expositive on concerns with the aesthetic results. For example, although ryhoplasty is given a high "worth it" rate (90%), many patients face anxiety during the recovery period, since they cannot see the final results immediately and have to wait some time until the swollen is gone. On the other hand, minimally or non-invasive treatments like coolsculpting and botox tend to receive more positive sentiment reviews (curiously, the majority of negative sentiment reviews to coolsculpting are related to the minimal results of the procedure).
+As expected, **the more invasive procedures that render more drastic results, the more negative sentiment its posts receive**. It's because patients are more expositive on concerns with the aesthetic results. For example, although ryhoplasty is given a high "worth it" rate (90%), many patients face anxiety during the recovery period, since they cannot see the final results immediately and have to wait some time until the swollen is gone. On the other hand, minimally or non-invasive treatments like coolsculpting and botox tend to receive more positive sentiment reviews (curiously, the majority of negative sentiment reviews to coolsculpting are related to the minimal results of the procedure).
 
 ### Demo
 
@@ -76,7 +76,7 @@ As expected, the more invasive procedures that render more drastic results, the 
 
 ### Conclusions & Future work
 
-Online reviews are a big factor in a company's reputation, however it's challenging to oversee all the opinions posted on review platforms. For minimizing the workload, I experimented applying machine learning and text mining methods to identify relevant themes present in those opinions, using semantic topic modeling.
+Online reviews are a big factor in a company's reputation, however **it's challenging to oversee all the opinions posted on review platforms**. For minimizing the workload, I experimented applying machine learning and text mining methods to identify relevant themes present in those opinions, using semantic topic modeling.
 
 In fact, probabilistic topic models are becoming popular tools to uncover what other users think about a product. On the service provider's side, it can give good **insights of what users most care about when purchasing a product or a service**. On the user's side, it allows the provider to personalize the content of the reviews platform in order to **shorten the time an user needs to make a decision**, for example, creating rating for specific categories. 
 
