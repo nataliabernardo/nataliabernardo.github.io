@@ -85,9 +85,7 @@ As next steps, I would like to expand the project developing:
 #### Comparison tool
 
 There's a trade-off between downtime and results, while some people prefer shorter recovery time, others prefer drastic results. So if patients had a tool to compare between treatments with similar goals (e.g. liposuction vs. Coolsculpting) based on their priorities, they could spend less time in their research and choose the most appropriate procedure for their expectations and avoid frustating experiences like:
-
 <p align="center"> <img src="/assets/article_images/project_4/coolsculpting_review1.png" width="100%"></p>
-
 
 #### Classification model (SVM) for assigning topics to new reviews.
 
