@@ -76,7 +76,10 @@ As expected, the more invasive procedures that render more drastic results, the 
 
 ### Conclusions & Future work
 
-It is challeging to extract relevant features from large number of opinions posted on review platforms and at the same time offer this information in a useful way to each user. Probabilistic topic models are becoming popular tools to uncover what other users think about a product. On the user side, it enables to personalize the content in order to shorten the time an user needs to make a decision. On the service provider's side, it can give insights of what users most care about. 
+Online reviews are a big factor in a company's reputation, however it's challeging to oversee all the opinions posted on review platforms. For this reason, I experimented applying machine learning and text mining methods identify relevant themes present in those opinions. Probabilistic topic models are becoming popular tools to uncover what other users think about a product. On the service provider's side, it can give good insights of what users most care about a product or a service. On the user side, it allows the provider to personalize the content of the reviews platform in order to shorten the time an user needs to make a decision, for example, creatings 
+
+
+
 
 In the aesthetics 
 
