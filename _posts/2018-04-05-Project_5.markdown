@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Deep Learning for Accessibilibty (in progress...)"
+title:  "Deep Learning for Accessibility (in progress...)"
 featured-img: curbramp
 ---
 
