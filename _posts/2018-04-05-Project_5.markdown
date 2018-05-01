@@ -7,9 +7,7 @@ featured-img: curbramp
 # Using Convolutional Neural Network to identify curb ramps on images
 
 
-### Identifying Curb Ramps on Sidewalks through Google Street View images
-
-Write about why detect curb ramps and assumptions
+### Identifying Curb Ramps on Sidewalks through Google Street View images (in progress...)
   
 ### 1. Extracting images from Google Street View
 
