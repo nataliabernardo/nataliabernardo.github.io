@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Deep Learning for Accessibilibty"
+title:  "Deep Learning for Accessibilibty (in progress...)"
 featured-img: curbramp
 ---
 
 # Using Convolutional Neural Network to identify curb ramps on images
 
 
-### Identifying Curb Ramps on Sidewalks through Google Street View images (in progress...)
+### Identifying Curb Ramps on Sidewalks through Google Street View images
   
 ### 1. Extracting images from Google Street View
 
