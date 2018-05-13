@@ -34,7 +34,7 @@ After that, I manually labelled 1500 images, drawing rectangles around curb ramp
 There are different ways of identifying a  specific class on images, as illustrated in the picture below.
 
 <p align="center"> <img src="/assets/article_images/project_5/image_detection.jpg" width="90%"></p>
-<p align="center"><font size="1">Source: <a href="https://research.fb.com/learning-to-segment/">Facebook Research</a></font></p> 
+<p align="center"><font size="3">Source: <a href="https://research.fb.com/learning-to-segment/">Facebook Research</a></font></p> 
 
 For this project I chose the object detection method. First, because since I'm training images with custom classes, it requires drawing simple bounding boxes around the ramps, instead of polygons as in segmentation. And I believe it would be a tricky task to use the classification method on a new category. 
 
@@ -51,7 +51,7 @@ With the transfer learning process it's possible to shorten the amount of time n
 There's a speed/accuracy trade-off when choosing the object detection model, as despicted in the image below:
 
 <p align="center"> <img src="/assets/article_images/project_5/models_trade-off.jpg" width="65%"></p>
-<p align="center"><font size="1">Source: <a href="https://arxiv.org/pdf/1611.10012.pdf">Speed/accuracy trade-offs for modern convolutional object detectors</a></font></p>
+<p align="center"><font size="3">Source: <a href="https://arxiv.org/pdf/1611.10012.pdf">Speed/accuracy trade-offs for modern convolutional object detectors</a></font></p>
 
 For finding the best pre-trained model for object detection. I tried different arrangements and the one that provided more accurate results at a better speed was the [Faster R-CNN](https://arxiv.org/pdf/1506.01497.pdf), which is a region based convolutional network, using [ResNet](https://arxiv.org/abs/1512.03385) feature extractor.
 
