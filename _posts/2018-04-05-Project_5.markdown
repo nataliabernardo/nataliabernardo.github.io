@@ -11,7 +11,7 @@ featured-img: curbramp
 
 When I moved to Seattle, one year ago, I noticed that some neighborhoods were not served with disabled-friendly sidewalks, especially because not every corner had a curb ramp. Fortunately, the City is making an effort for adding [ADA (Americans with Disabilities Act) compliant curb ramps](http://www.ada-compliance.com/ada-compliance/cub-ramp) on its streets. 
 
-<p align="center"> <img src="/assets/article_images/project_4/ADA.png" width="90%"></p>
+<p align="center"> <img src="/assets/article_images/project_5/ADA.png" width="90%"></p>
 
 The Seattle Department of Transportation (SDOT) just started implementing a [Pedestrian Master Plan](https://www.theurbanist.org/2018/02/08/sdot-unveils-first-five-year-pedestrian-implementation-plan/), that required a minutious assessment of curb ramp’s condition. However, this work is costly usually being executed through mapathons. And not all cities have enough resources to do it.
 
@@ -25,7 +25,7 @@ The images used for this project were the pictures of intersections, extracted f
 
 After that, I manually labelled 1500 images, drawing rectangles around the curb ramps for teaching the model which object I’m trying to recognize (I will explain the labelling process later).
 
-<p align="center"> <img src="/assets/article_images/project_4/data_collection.png" width="50%"></p>
+<p align="center"> <img src="/assets/article_images/project_5/data_collection.png" width="50%"></p>
 
 ### 2. Choosing the Model
 
@@ -33,7 +33,7 @@ After that, I manually labelled 1500 images, drawing rectangles around the curb 
 
 There are different ways of identifying a specific class on images, as illustrated in the picture below.
 
-<p align="center"> <img src="/assets/article_images/project_4/image_detection.jpg" width="90%"></p>
+<p align="center"> <img src="/assets/article_images/project_5/image_detection.jpg" width="90%"></p>
 <p align="center"><font size="1">Source: <a href="https://research.fb.com/learning-to-segment/">Facebook Research</a></font></p> 
 
 For this project, I chose to use the “object detection” method. Since I’m training the model with images for custom object classes, “object detection” would only require me to draw simple bounding boxes around the ramps instead of the complex polygons that “object segmentation” would need. And I believe that it would be an even trickier task to use the “image classification” method for this category without any visual cue of the multiple curb ramps identified on a photo.
@@ -50,14 +50,14 @@ With the transfer learning process, it’s possible to shorten the amount of tim
 
 There's a speed/accuracy trade-off when choosing the object detection model, as depicted in the image below:
 
-<p align="center"> <img src="/assets/article_images/project_4/models_trade-off.jpg" width="65%"></p>
+<p align="center"> <img src="/assets/article_images/project_5/models_trade-off.jpg" width="65%"></p>
 <p align="center"><font size="1">Source: <a href="https://arxiv.org/pdf/1611.10012.pdf">Speed/accuracy trade-offs for modern convolutional object detectors</a></font></p>
 
 For finding the best pre-trained model for object detection. I tried different arrangements and the one that provided more accurate results at a better speed was the [Faster R-CNN](https://arxiv.org/pdf/1506.01497.pdf), which is a region based convolutional network, using [ResNet](https://arxiv.org/abs/1512.03385) feature extractor.
 
 In fact, the sweet spot is the “elbow” part of the mAP (Mean Average Precision) vs GPU time graph, exactly where the Faster R-CNN with ResNet is located.
 
-<p align="center"> <img src="/assets/article_images/project_4/transferlearning.png" width="80%"></p>
+<p align="center"> <img src="/assets/article_images/project_5/transferlearning.png" width="80%"></p>
 
 ### 3. Preparing the Data
 
@@ -120,7 +120,7 @@ Finally, I applied the trained model to the Google Street View images of Fremont
 
 I was happy with the results so far. The predictions using Faster R-CNN ResNet were significantly more accurate than in my previous attempt (using SSD MobileNet).
 
-<p align="center"> <img src="/assets/article_images/project_4/results.png" width="80%"></p>
+<p align="center"> <img src="/assets/article_images/project_5/results.png" width="80%"></p>
 
 With 75% recall (the % of ramps that could be detected) and 80% precision (the % of correctly detected ramps), the model identified curb ramps and classified them as likely to be ADA compliant or not compliant. The majority of wrong predictions are false negatives, usually because the ramp is not entirely on the picture, or it is too distant, or covered by shadow.
 
@@ -129,7 +129,7 @@ Finally, I plotted the results on a map. The markers indicate where there are cu
 <iframe src="https://www.google.com/maps/d/embed?mid=1L6EW2hkMIgIXJQzMItyin3NDNXjf5LSh" width="640" height="480"></iframe>
 
 Bonus: I also tested the model using MoviePy’s VideoFileClip in a short video that I recorded at Pioneer Square in Seattle. VideoFileClip applies the classification on each frame of the video, and you can see the curb ramps being identified in real time on the video below:
-<p align="center"> <img src="/assets/article_images/project_4/rampgif.gif" width="40%"></p>
+<p align="center"> <img src="/assets/article_images/project_5/rampgif.gif" width="40%"></p>
 
 
 ### 6. Conclusions & Next Steps
