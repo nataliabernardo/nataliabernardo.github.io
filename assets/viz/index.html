@@ -436,7 +436,7 @@
           d.title = d.title;
           //((portion/total) * 100).toFixed(2) + '%'
           d.percentage = '(' + (+d.rating * 100).toFixed(2) + '% of users reviewed positively)';
-          d.rating = parseInt(+d.rating * starCount);
+          d.rating = parseInt(Math.round(+d.rating * starCount));
 
         })
 
