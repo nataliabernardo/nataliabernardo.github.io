@@ -24,6 +24,8 @@ Having the topics defined, I decided to **predict how the users would rate their
 
 The results were presented in an interactive viz ([click here](https://nataliabernardo.github.io/assets/viz/index.html)), where you can explore the ratings, topics by procedure and sentiment over time.
 
+Feel free to check out my code on my [github](https://github.com/nataliabernardo/TopicModeling_LDA_NLP)!
+
 ## 1. Data collection and cleaning
 
 I extracted all posts (53,547 posts from 17,270 unique users) of all reviews from 3 different procedures: botox, rhinoplasty and coolsculpting. I used BeatifulSoup and Selenium for obtaining the data, and stored it in MongoDB.
