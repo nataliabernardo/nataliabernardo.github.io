@@ -8,7 +8,7 @@ Hello! Welcome to my blog!
 
 <img src="/assets/img/author.png" width="50%">
 
-I am a Seattle-based data scientist at Metis.
+I am a Seattle-based data scientist at Microsoft.
 
 Previously, I worked as a Data Analyst and Economic Consultant for 5 years, designing regulatory policies and tariff for public utilities through econometric techniques. The extensive quantitative analysis learned from this experience sparked my interest in experimenting with more tools to find patterns in data, and to identify the most appropriate method for solving a problem. 
 
@@ -26,4 +26,4 @@ BS Electrical Engineering - Federal University of Rio de Janeiro (2012)
 
 #### Contact me
 
-[bernardo.natalia@outlook.com](mailto:bernardo.natalia@outlook.com)
+https://www.linkedin.com/in/nataliabernardo/
